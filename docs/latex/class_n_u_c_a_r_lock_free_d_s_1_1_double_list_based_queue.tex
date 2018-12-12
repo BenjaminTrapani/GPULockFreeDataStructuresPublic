@@ -1,0 +1,65 @@
+\hypertarget{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue}{}\section{N\+U\+C\+A\+R\+Lock\+Free\+DS\+:\+:Double\+List\+Based\+Queue$<$ T, num\+Threads, scan\+Threshold $>$ Class Template Reference}
+\label{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue}\index{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue$<$ T, num\+Threads, scan\+Threshold $>$@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue$<$ T, num\+Threads, scan\+Threshold $>$}}
+
+
+{\ttfamily \#include $<$Double\+List\+Based\+Queue.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue_ad9f196b3ea9ee4c684a5fab3c6bb9ddd}{enqueue}} (const T \&value)
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ bool \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue_a9541892be0892b41bc17a354586aa173}{dequeue}} (T \&result)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue_adfcec8aa40c6690e45107405c2fa2c35}{List\+\_\+t}} = \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_lock_free_doubly_linked_list}{Lock\+Free\+Doubly\+Linked\+List}}$<$ T, num\+Threads, scan\+Threshold $>$
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue_adfcec8aa40c6690e45107405c2fa2c35}{List\+\_\+t}} \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue_ac63ca28afaaf2cb487e9ff03b601e20b}{list}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue_adfcec8aa40c6690e45107405c2fa2c35}\label{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue_adfcec8aa40c6690e45107405c2fa2c35}} 
+\index{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue}!List\+\_\+t@{List\+\_\+t}}
+\index{List\+\_\+t@{List\+\_\+t}!N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue}}
+\subsubsection{\texorpdfstring{List\+\_\+t}{List\_t}}
+{\footnotesize\ttfamily template$<$typename T , Lock\+Free\+Doubly\+Linked\+List\+Config\+::\+Doubly\+Linked\+List\+Index\+\_\+t num\+Threads, Lock\+Free\+Doubly\+Linked\+List\+Config\+::\+Doubly\+Linked\+List\+Index\+\_\+t scan\+Threshold = Lock\+Free\+Doubly\+Linked\+List\+Config\+::\+Get\+Default\+Scan\+Threshold$<$\+Lock\+Free\+Doubly\+Linked\+List\+Config\+::\+Doubly\+Linked\+List\+Index\+\_\+t$>$(num\+Threads)$>$ \\
+using \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue}}$<$ T, num\+Threads, scan\+Threshold $>$\+::\mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue_adfcec8aa40c6690e45107405c2fa2c35}{List\+\_\+t}} =  \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_lock_free_doubly_linked_list}{Lock\+Free\+Doubly\+Linked\+List}}$<$T, num\+Threads, scan\+Threshold$>$\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue_a9541892be0892b41bc17a354586aa173}\label{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue_a9541892be0892b41bc17a354586aa173}} 
+\index{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue}!dequeue@{dequeue}}
+\index{dequeue@{dequeue}!N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue}}
+\subsubsection{\texorpdfstring{dequeue()}{dequeue()}}
+{\footnotesize\ttfamily template$<$typename T , Lock\+Free\+Doubly\+Linked\+List\+Config\+::\+Doubly\+Linked\+List\+Index\+\_\+t num\+Threads, Lock\+Free\+Doubly\+Linked\+List\+Config\+::\+Doubly\+Linked\+List\+Index\+\_\+t scan\+Threshold = Lock\+Free\+Doubly\+Linked\+List\+Config\+::\+Get\+Default\+Scan\+Threshold$<$\+Lock\+Free\+Doubly\+Linked\+List\+Config\+::\+Doubly\+Linked\+List\+Index\+\_\+t$>$(num\+Threads)$>$ \\
+\+\_\+\+\_\+device\+\_\+\+\_\+ bool \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue}}$<$ T, num\+Threads, scan\+Threshold $>$\+::dequeue (\begin{DoxyParamCaption}\item[{T \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue_ad9f196b3ea9ee4c684a5fab3c6bb9ddd}\label{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue_ad9f196b3ea9ee4c684a5fab3c6bb9ddd}} 
+\index{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue}}
+\subsubsection{\texorpdfstring{enqueue()}{enqueue()}}
+{\footnotesize\ttfamily template$<$typename T , Lock\+Free\+Doubly\+Linked\+List\+Config\+::\+Doubly\+Linked\+List\+Index\+\_\+t num\+Threads, Lock\+Free\+Doubly\+Linked\+List\+Config\+::\+Doubly\+Linked\+List\+Index\+\_\+t scan\+Threshold = Lock\+Free\+Doubly\+Linked\+List\+Config\+::\+Get\+Default\+Scan\+Threshold$<$\+Lock\+Free\+Doubly\+Linked\+List\+Config\+::\+Doubly\+Linked\+List\+Index\+\_\+t$>$(num\+Threads)$>$ \\
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue}}$<$ T, num\+Threads, scan\+Threshold $>$\+::enqueue (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue_ac63ca28afaaf2cb487e9ff03b601e20b}\label{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue_ac63ca28afaaf2cb487e9ff03b601e20b}} 
+\index{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue}!list@{list}}
+\index{list@{list}!N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue}}
+\subsubsection{\texorpdfstring{list}{list}}
+{\footnotesize\ttfamily template$<$typename T , Lock\+Free\+Doubly\+Linked\+List\+Config\+::\+Doubly\+Linked\+List\+Index\+\_\+t num\+Threads, Lock\+Free\+Doubly\+Linked\+List\+Config\+::\+Doubly\+Linked\+List\+Index\+\_\+t scan\+Threshold = Lock\+Free\+Doubly\+Linked\+List\+Config\+::\+Get\+Default\+Scan\+Threshold$<$\+Lock\+Free\+Doubly\+Linked\+List\+Config\+::\+Doubly\+Linked\+List\+Index\+\_\+t$>$(num\+Threads)$>$ \\
+\mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue_adfcec8aa40c6690e45107405c2fa2c35}{List\+\_\+t}} \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_double_list_based_queue}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Double\+List\+Based\+Queue}}$<$ T, num\+Threads, scan\+Threshold $>$\+::list\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+P\+U\+Lock\+Free\+Data\+Structures/\mbox{\hyperlink{_double_list_based_queue_8hpp}{Double\+List\+Based\+Queue.\+hpp}}\end{DoxyCompactItemize}

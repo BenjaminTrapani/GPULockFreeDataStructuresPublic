@@ -1,0 +1,86 @@
+\hypertarget{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node}{}\section{N\+U\+C\+A\+R\+Lock\+Free\+DS\+:\+:Allocator$<$ T, I\+Link\+\_\+t, I\+Index\+\_\+t, Terminate\+Node\+\_\+t, Clean\+Up\+Node\+\_\+t, Get\+This\+Thread\+I\+D\+\_\+t, index\+Sentinel, num\+Threads, indices\+Per\+Thread, max\+Links, max\+Links\+To\+Deleted\+Node, scan\+Threshold, node\+Alignment $>$\+:\+:Node Class Reference}
+\label{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node}\index{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator$<$ T, I\+Link\+\_\+t, I\+Index\+\_\+t, Terminate\+Node\+\_\+t, Clean\+Up\+Node\+\_\+t, Get\+This\+Thread\+I\+D\+\_\+t, index\+Sentinel, num\+Threads, indices\+Per\+Thread, max\+Links, max\+Links\+To\+Deleted\+Node, scan\+Threshold, node\+Alignment $>$\+::\+Node@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator$<$ T, I\+Link\+\_\+t, I\+Index\+\_\+t, Terminate\+Node\+\_\+t, Clean\+Up\+Node\+\_\+t, Get\+This\+Thread\+I\+D\+\_\+t, index\+Sentinel, num\+Threads, indices\+Per\+Thread, max\+Links, max\+Links\+To\+Deleted\+Node, scan\+Threshold, node\+Alignment $>$\+::\+Node}}
+
+
+{\ttfamily \#include $<$Allocator.\+hpp$>$}
+
+Inheritance diagram for N\+U\+C\+A\+R\+Lock\+Free\+DS\+:\+:Allocator$<$ T, I\+Link\+\_\+t, I\+Index\+\_\+t, Terminate\+Node\+\_\+t, Clean\+Up\+Node\+\_\+t, Get\+This\+Thread\+I\+D\+\_\+t, index\+Sentinel, num\+Threads, indices\+Per\+Thread, max\+Links, max\+Links\+To\+Deleted\+Node, scan\+Threshold, node\+Alignment $>$\+:\+:Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.841473cm]{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node_ac6eeee00317554695aed9e4657d222d7}{Node}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+volatile int \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node_a312678ef69212305fcb1a502487ecbf0}{ref\+Count}}
+\item 
+volatile bool \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node_a2f124c812c1bff924eb839a4dcd372b8}{trace}}
+\item 
+volatile bool \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node_ab5fd866eb1405eb7c5962f7842d6f546}{del}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node_a4580c3239c67ddcfdafff4feae0d9b1d}{This\+\_\+t}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T, typename I\+Link\+\_\+t, typename I\+Index\+\_\+t, typename Terminate\+Node\+\_\+t, typename Clean\+Up\+Node\+\_\+t, typename Get\+This\+Thread\+I\+D\+\_\+t, I\+Index\+\_\+t index\+Sentinel, I\+Index\+\_\+t num\+Threads, I\+Index\+\_\+t indices\+Per\+Thread, I\+Index\+\_\+t max\+Links, I\+Index\+\_\+t max\+Links\+To\+Deleted\+Node, I\+Index\+\_\+t scan\+Threshold, unsigned long long int node\+Alignment = 8$>$\newline
+class N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator$<$ T, I\+Link\+\_\+t, I\+Index\+\_\+t, Terminate\+Node\+\_\+t, Clean\+Up\+Node\+\_\+t, Get\+This\+Thread\+I\+D\+\_\+t, index\+Sentinel, num\+Threads, indices\+Per\+Thread, max\+Links, max\+Links\+To\+Deleted\+Node, scan\+Threshold, node\+Alignment $>$\+::\+Node}
+
+\mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator}{Allocator}} node type that extends the type to be allocated T with some metadata required by the allocator. Instances of this type are passed to client code and are expected to be returned to client code via Link\+\_\+t\+::\+Get\+Node() 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node_ac6eeee00317554695aed9e4657d222d7}\label{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node_ac6eeee00317554695aed9e4657d222d7}} 
+\index{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node}!Node@{Node}}
+\index{Node@{Node}!N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node}}
+\subsubsection{\texorpdfstring{Node()}{Node()}}
+{\footnotesize\ttfamily template$<$typename T, typename I\+Link\+\_\+t, typename I\+Index\+\_\+t, typename Terminate\+Node\+\_\+t, typename Clean\+Up\+Node\+\_\+t, typename Get\+This\+Thread\+I\+D\+\_\+t, I\+Index\+\_\+t index\+Sentinel, I\+Index\+\_\+t num\+Threads, I\+Index\+\_\+t indices\+Per\+Thread, I\+Index\+\_\+t max\+Links, I\+Index\+\_\+t max\+Links\+To\+Deleted\+Node, I\+Index\+\_\+t scan\+Threshold, unsigned long long int node\+Alignment = 8$>$ \\
+\+\_\+\+\_\+device\+\_\+\+\_\+ \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator}}$<$ T, I\+Link\+\_\+t, I\+Index\+\_\+t, Terminate\+Node\+\_\+t, Clean\+Up\+Node\+\_\+t, Get\+This\+Thread\+I\+D\+\_\+t, index\+Sentinel, num\+Threads, indices\+Per\+Thread, max\+Links, max\+Links\+To\+Deleted\+Node, scan\+Threshold, node\+Alignment $>$\+::Node\+::\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node_a4580c3239c67ddcfdafff4feae0d9b1d}\label{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node_a4580c3239c67ddcfdafff4feae0d9b1d}} 
+\index{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node}!This\+\_\+t@{This\+\_\+t}}
+\index{This\+\_\+t@{This\+\_\+t}!N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node}}
+\subsubsection{\texorpdfstring{This\+\_\+t}{This\_t}}
+{\footnotesize\ttfamily template$<$typename T, typename I\+Link\+\_\+t, typename I\+Index\+\_\+t, typename Terminate\+Node\+\_\+t, typename Clean\+Up\+Node\+\_\+t, typename Get\+This\+Thread\+I\+D\+\_\+t, I\+Index\+\_\+t index\+Sentinel, I\+Index\+\_\+t num\+Threads, I\+Index\+\_\+t indices\+Per\+Thread, I\+Index\+\_\+t max\+Links, I\+Index\+\_\+t max\+Links\+To\+Deleted\+Node, I\+Index\+\_\+t scan\+Threshold, unsigned long long int node\+Alignment = 8$>$ \\
+friend class \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_aa7636b4884545094b9532cc295604b17}{This\+\_\+t}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node_ab5fd866eb1405eb7c5962f7842d6f546}\label{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node_ab5fd866eb1405eb7c5962f7842d6f546}} 
+\index{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node}!del@{del}}
+\index{del@{del}!N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node}}
+\subsubsection{\texorpdfstring{del}{del}}
+{\footnotesize\ttfamily template$<$typename T, typename I\+Link\+\_\+t, typename I\+Index\+\_\+t, typename Terminate\+Node\+\_\+t, typename Clean\+Up\+Node\+\_\+t, typename Get\+This\+Thread\+I\+D\+\_\+t, I\+Index\+\_\+t index\+Sentinel, I\+Index\+\_\+t num\+Threads, I\+Index\+\_\+t indices\+Per\+Thread, I\+Index\+\_\+t max\+Links, I\+Index\+\_\+t max\+Links\+To\+Deleted\+Node, I\+Index\+\_\+t scan\+Threshold, unsigned long long int node\+Alignment = 8$>$ \\
+volatile bool \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator}}$<$ T, I\+Link\+\_\+t, I\+Index\+\_\+t, Terminate\+Node\+\_\+t, Clean\+Up\+Node\+\_\+t, Get\+This\+Thread\+I\+D\+\_\+t, index\+Sentinel, num\+Threads, indices\+Per\+Thread, max\+Links, max\+Links\+To\+Deleted\+Node, scan\+Threshold, node\+Alignment $>$\+::Node\+::del\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node_a312678ef69212305fcb1a502487ecbf0}\label{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node_a312678ef69212305fcb1a502487ecbf0}} 
+\index{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node}!ref\+Count@{ref\+Count}}
+\index{ref\+Count@{ref\+Count}!N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node}}
+\subsubsection{\texorpdfstring{ref\+Count}{refCount}}
+{\footnotesize\ttfamily template$<$typename T, typename I\+Link\+\_\+t, typename I\+Index\+\_\+t, typename Terminate\+Node\+\_\+t, typename Clean\+Up\+Node\+\_\+t, typename Get\+This\+Thread\+I\+D\+\_\+t, I\+Index\+\_\+t index\+Sentinel, I\+Index\+\_\+t num\+Threads, I\+Index\+\_\+t indices\+Per\+Thread, I\+Index\+\_\+t max\+Links, I\+Index\+\_\+t max\+Links\+To\+Deleted\+Node, I\+Index\+\_\+t scan\+Threshold, unsigned long long int node\+Alignment = 8$>$ \\
+volatile int \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator}}$<$ T, I\+Link\+\_\+t, I\+Index\+\_\+t, Terminate\+Node\+\_\+t, Clean\+Up\+Node\+\_\+t, Get\+This\+Thread\+I\+D\+\_\+t, index\+Sentinel, num\+Threads, indices\+Per\+Thread, max\+Links, max\+Links\+To\+Deleted\+Node, scan\+Threshold, node\+Alignment $>$\+::Node\+::ref\+Count\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node_a2f124c812c1bff924eb839a4dcd372b8}\label{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node_a2f124c812c1bff924eb839a4dcd372b8}} 
+\index{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node}!trace@{trace}}
+\index{trace@{trace}!N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+Node}}
+\subsubsection{\texorpdfstring{trace}{trace}}
+{\footnotesize\ttfamily template$<$typename T, typename I\+Link\+\_\+t, typename I\+Index\+\_\+t, typename Terminate\+Node\+\_\+t, typename Clean\+Up\+Node\+\_\+t, typename Get\+This\+Thread\+I\+D\+\_\+t, I\+Index\+\_\+t index\+Sentinel, I\+Index\+\_\+t num\+Threads, I\+Index\+\_\+t indices\+Per\+Thread, I\+Index\+\_\+t max\+Links, I\+Index\+\_\+t max\+Links\+To\+Deleted\+Node, I\+Index\+\_\+t scan\+Threshold, unsigned long long int node\+Alignment = 8$>$ \\
+volatile bool \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator}}$<$ T, I\+Link\+\_\+t, I\+Index\+\_\+t, Terminate\+Node\+\_\+t, Clean\+Up\+Node\+\_\+t, Get\+This\+Thread\+I\+D\+\_\+t, index\+Sentinel, num\+Threads, indices\+Per\+Thread, max\+Links, max\+Links\+To\+Deleted\+Node, scan\+Threshold, node\+Alignment $>$\+::Node\+::trace\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+P\+U\+Lock\+Free\+Data\+Structures/\mbox{\hyperlink{_allocator_8hpp}{Allocator.\+hpp}}\end{DoxyCompactItemize}

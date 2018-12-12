@@ -1,0 +1,42 @@
+\hypertarget{_lock_free_queue_8hpp}{}\section{G\+P\+U\+Lock\+Free\+Data\+Structures/\+Lock\+Free\+Queue.hpp File Reference}
+\label{_lock_free_queue_8hpp}\index{G\+P\+U\+Lock\+Free\+Data\+Structures/\+Lock\+Free\+Queue.\+hpp@{G\+P\+U\+Lock\+Free\+Data\+Structures/\+Lock\+Free\+Queue.\+hpp}}
+{\ttfamily \#include \char`\"{}cuda\+\_\+runtime.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue}{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue$<$ T, sentinel $>$}}
+\item 
+class \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer}{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue$<$ T, sentinel $>$\+::\+Queue\+Node\+Pointer}}
+\item 
+class \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node}{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue$<$ T, sentinel $>$\+::\+Queue\+Node}}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_lock_free_queue_g_p_u}{Lock\+Free\+Queue\+G\+PU}}
+\item 
+ \mbox{\hyperlink{namespace_lock_free_queue_g_p_u_1_1_alignment_configs}{Lock\+Free\+Queue\+G\+P\+U\+::\+Alignment\+Configs}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_lock_free_queue_8hpp_ac78f869793441a6e870ee08ebc8d8e5b}{D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+M\+I\+S\+A\+L\+I\+G\+N\+E\+D\+\_\+\+N\+O\+DE}}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr unsigned int \mbox{\hyperlink{namespace_lock_free_queue_g_p_u_1_1_alignment_configs_a787a4f09ac6aab7a3f4f822b981e58ab}{Lock\+Free\+Queue\+G\+P\+U\+::\+Alignment\+Configs\+::queue\+Node\+Alignment}} = 16
+\item 
+constexpr unsigned int \mbox{\hyperlink{namespace_lock_free_queue_g_p_u_1_1_alignment_configs_a1f35ad1d068c4d9e10ec8e9f1cfa06b2}{Lock\+Free\+Queue\+G\+P\+U\+::\+Alignment\+Configs\+::num\+Count\+Bits}} = 4
+\item 
+constexpr unsigned int \mbox{\hyperlink{namespace_lock_free_queue_g_p_u_1_1_alignment_configs_a144c3b9d88eb1fa121571c23e8adc819}{Lock\+Free\+Queue\+G\+P\+U\+::\+Alignment\+Configs\+::ptr\+Mask}} = queue\+Node\+Alignment -\/ 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_lock_free_queue_8hpp_ac78f869793441a6e870ee08ebc8d8e5b}\label{_lock_free_queue_8hpp_ac78f869793441a6e870ee08ebc8d8e5b}} 
+\index{Lock\+Free\+Queue.\+hpp@{Lock\+Free\+Queue.\+hpp}!D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+M\+I\+S\+A\+L\+I\+G\+N\+E\+D\+\_\+\+N\+O\+DE@{D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+M\+I\+S\+A\+L\+I\+G\+N\+E\+D\+\_\+\+N\+O\+DE}}
+\index{D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+M\+I\+S\+A\+L\+I\+G\+N\+E\+D\+\_\+\+N\+O\+DE@{D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+M\+I\+S\+A\+L\+I\+G\+N\+E\+D\+\_\+\+N\+O\+DE}!Lock\+Free\+Queue.\+hpp@{Lock\+Free\+Queue.\+hpp}}
+\subsubsection{\texorpdfstring{D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+M\+I\+S\+A\+L\+I\+G\+N\+E\+D\+\_\+\+N\+O\+DE}{DISALLOW\_MISALIGNED\_NODE}}
+{\footnotesize\ttfamily \#define D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+M\+I\+S\+A\+L\+I\+G\+N\+E\+D\+\_\+\+N\+O\+DE}
+

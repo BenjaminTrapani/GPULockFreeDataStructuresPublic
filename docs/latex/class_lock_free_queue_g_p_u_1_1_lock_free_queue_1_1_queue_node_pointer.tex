@@ -1,0 +1,109 @@
+\hypertarget{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer}{}\section{Lock\+Free\+Queue\+G\+PU\+:\+:Lock\+Free\+Queue$<$ T, sentinel $>$\+:\+:Queue\+Node\+Pointer Class Reference}
+\label{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer}\index{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue$<$ T, sentinel $>$\+::\+Queue\+Node\+Pointer@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue$<$ T, sentinel $>$\+::\+Queue\+Node\+Pointer}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned long long int \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a5eb055dfbc4fd3ae549748372a029455}{Pointer\+\_\+t}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a398bfd1f12b6047f4552486566fb3dc8}{Queue\+Node\+Pointer}} ()
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_aee8f8f4a0fe3b228ab37934d05051f02}{Queue\+Node\+Pointer}} (\mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node}{Queue\+Node}} $\ast$init\+Ptr)
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a5b8f7553a4a723392eb5c4b1ce7e3875}{Queue\+Node\+Pointer}} (\mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node}{Queue\+Node}} $\ast$init\+Ptr, const unsigned int init\+Count)
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node}{Queue\+Node}} $\ast$ \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a3a8f5737220b153b6c3d5411251832cf}{ptr}} () const
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ unsigned int \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a44656a2bd6b73d9b9028f63b49806bb4}{count}} () const
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ bool \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a45e5ddb1d0f52a9f0b0b60626aac8b89}{perform\+Atomic\+C\+AS}} (const \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer}{Queue\+Node\+Pointer}} \&expected\+Node, const \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer}{Queue\+Node\+Pointer}} \&new\+Node)
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ bool \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a6aa8cb1939d2481eb06f765dffa472f7}{operator==}} (const \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer}{Queue\+Node\+Pointer}} \&other) const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node}{Queue\+Node}} $\ast$ \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a668c69b8c98e86b403590d1ca0734983}{\+\_\+ptr}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a5eb055dfbc4fd3ae549748372a029455}\label{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a5eb055dfbc4fd3ae549748372a029455}} 
+\index{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer}!Pointer\+\_\+t@{Pointer\+\_\+t}}
+\index{Pointer\+\_\+t@{Pointer\+\_\+t}!Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer}}
+\subsubsection{\texorpdfstring{Pointer\+\_\+t}{Pointer\_t}}
+{\footnotesize\ttfamily template$<$typename T , T sentinel$>$ \\
+typedef unsigned long long int \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue}{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}}$<$ T, sentinel $>$\+::\mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a5eb055dfbc4fd3ae549748372a029455}{Queue\+Node\+Pointer\+::\+Pointer\+\_\+t}}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a398bfd1f12b6047f4552486566fb3dc8}\label{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a398bfd1f12b6047f4552486566fb3dc8}} 
+\index{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer}!Queue\+Node\+Pointer@{Queue\+Node\+Pointer}}
+\index{Queue\+Node\+Pointer@{Queue\+Node\+Pointer}!Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer}}
+\subsubsection{\texorpdfstring{Queue\+Node\+Pointer()}{QueueNodePointer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T , T sentinel$>$ \\
+\+\_\+\+\_\+device\+\_\+\+\_\+ \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue}{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}}$<$ T, sentinel $>$\+::Queue\+Node\+Pointer\+::\+Queue\+Node\+Pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_aee8f8f4a0fe3b228ab37934d05051f02}\label{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_aee8f8f4a0fe3b228ab37934d05051f02}} 
+\index{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer}!Queue\+Node\+Pointer@{Queue\+Node\+Pointer}}
+\index{Queue\+Node\+Pointer@{Queue\+Node\+Pointer}!Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer}}
+\subsubsection{\texorpdfstring{Queue\+Node\+Pointer()}{QueueNodePointer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T , T sentinel$>$ \\
+\+\_\+\+\_\+device\+\_\+\+\_\+ \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue}{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}}$<$ T, sentinel $>$\+::Queue\+Node\+Pointer\+::\+Queue\+Node\+Pointer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node}{Queue\+Node}} $\ast$}]{init\+Ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a5b8f7553a4a723392eb5c4b1ce7e3875}\label{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a5b8f7553a4a723392eb5c4b1ce7e3875}} 
+\index{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer}!Queue\+Node\+Pointer@{Queue\+Node\+Pointer}}
+\index{Queue\+Node\+Pointer@{Queue\+Node\+Pointer}!Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer}}
+\subsubsection{\texorpdfstring{Queue\+Node\+Pointer()}{QueueNodePointer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T , T sentinel$>$ \\
+\+\_\+\+\_\+device\+\_\+\+\_\+ \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue}{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}}$<$ T, sentinel $>$\+::Queue\+Node\+Pointer\+::\+Queue\+Node\+Pointer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node}{Queue\+Node}} $\ast$}]{init\+Ptr,  }\item[{const unsigned int}]{init\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a44656a2bd6b73d9b9028f63b49806bb4}\label{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a44656a2bd6b73d9b9028f63b49806bb4}} 
+\index{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer}!count@{count}}
+\index{count@{count}!Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily template$<$typename T , T sentinel$>$ \\
+\+\_\+\+\_\+device\+\_\+\+\_\+ unsigned int \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue}{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}}$<$ T, sentinel $>$\+::Queue\+Node\+Pointer\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a6aa8cb1939d2481eb06f765dffa472f7}\label{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a6aa8cb1939d2481eb06f765dffa472f7}} 
+\index{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer}!operator==@{operator==}}
+\index{operator==@{operator==}!Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename T , T sentinel$>$ \\
+\+\_\+\+\_\+device\+\_\+\+\_\+ bool \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue}{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}}$<$ T, sentinel $>$\+::Queue\+Node\+Pointer\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer}{Queue\+Node\+Pointer}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a45e5ddb1d0f52a9f0b0b60626aac8b89}\label{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a45e5ddb1d0f52a9f0b0b60626aac8b89}} 
+\index{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer}!perform\+Atomic\+C\+AS@{perform\+Atomic\+C\+AS}}
+\index{perform\+Atomic\+C\+AS@{perform\+Atomic\+C\+AS}!Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer}}
+\subsubsection{\texorpdfstring{perform\+Atomic\+C\+A\+S()}{performAtomicCAS()}}
+{\footnotesize\ttfamily template$<$typename T , T sentinel$>$ \\
+\+\_\+\+\_\+device\+\_\+\+\_\+ bool \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue}{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}}$<$ T, sentinel $>$\+::Queue\+Node\+Pointer\+::perform\+Atomic\+C\+AS (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer}{Queue\+Node\+Pointer}} \&}]{expected\+Node,  }\item[{const \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer}{Queue\+Node\+Pointer}} \&}]{new\+Node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a3a8f5737220b153b6c3d5411251832cf}\label{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a3a8f5737220b153b6c3d5411251832cf}} 
+\index{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer}!ptr@{ptr}}
+\index{ptr@{ptr}!Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer}}
+\subsubsection{\texorpdfstring{ptr()}{ptr()}}
+{\footnotesize\ttfamily template$<$typename T , T sentinel$>$ \\
+\+\_\+\+\_\+device\+\_\+\+\_\+ \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node}{Queue\+Node}}$\ast$ \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue}{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}}$<$ T, sentinel $>$\+::Queue\+Node\+Pointer\+::ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a668c69b8c98e86b403590d1ca0734983}\label{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer_a668c69b8c98e86b403590d1ca0734983}} 
+\index{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer}!\+\_\+ptr@{\+\_\+ptr}}
+\index{\+\_\+ptr@{\+\_\+ptr}!Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue\+::\+Queue\+Node\+Pointer}}
+\subsubsection{\texorpdfstring{\+\_\+ptr}{\_ptr}}
+{\footnotesize\ttfamily template$<$typename T , T sentinel$>$ \\
+\mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node}{Queue\+Node}}$\ast$ \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue}{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}}$<$ T, sentinel $>$\+::Queue\+Node\+Pointer\+::\+\_\+ptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+P\+U\+Lock\+Free\+Data\+Structures/\mbox{\hyperlink{_lock_free_queue_8hpp}{Lock\+Free\+Queue.\+hpp}}\end{DoxyCompactItemize}

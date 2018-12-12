@@ -1,0 +1,43 @@
+\hypertarget{_lock_free_doubly_linked_list_8hpp}{}\section{G\+P\+U\+Lock\+Free\+Data\+Structures/\+Lock\+Free\+Doubly\+Linked\+List.hpp File Reference}
+\label{_lock_free_doubly_linked_list_8hpp}\index{G\+P\+U\+Lock\+Free\+Data\+Structures/\+Lock\+Free\+Doubly\+Linked\+List.\+hpp@{G\+P\+U\+Lock\+Free\+Data\+Structures/\+Lock\+Free\+Doubly\+Linked\+List.\+hpp}}
+{\ttfamily \#include \char`\"{}cuda\+\_\+runtime.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Allocator.\+hpp\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_lock_free_doubly_linked_list}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Lock\+Free\+Doubly\+Linked\+List$<$ T, num\+Threads, scan\+Threshold $>$}}
+\item 
+class \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_lock_free_doubly_linked_list_1_1_cursor}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Lock\+Free\+Doubly\+Linked\+List$<$ T, num\+Threads, scan\+Threshold $>$\+::\+Cursor}}
+\item 
+class \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_lock_free_doubly_linked_list_1_1_this_thread_functor}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Lock\+Free\+Doubly\+Linked\+List$<$ T, num\+Threads, scan\+Threshold $>$\+::\+This\+Thread\+Functor}}
+\item 
+class \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_lock_free_doubly_linked_list_1_1_link_with_delete_mark}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Lock\+Free\+Doubly\+Linked\+List$<$ T, num\+Threads, scan\+Threshold $>$\+::\+Link\+With\+Delete\+Mark}}
+\item 
+class \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_lock_free_doubly_linked_list_1_1_linked_list_node}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Lock\+Free\+Doubly\+Linked\+List$<$ T, num\+Threads, scan\+Threshold $>$\+::\+Linked\+List\+Node}}
+\item 
+class \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_lock_free_doubly_linked_list_1_1_terminate_node_functor}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Lock\+Free\+Doubly\+Linked\+List$<$ T, num\+Threads, scan\+Threshold $>$\+::\+Terminate\+Node\+Functor}}
+\item 
+class \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_lock_free_doubly_linked_list_1_1_clean_up_node_functor}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Lock\+Free\+Doubly\+Linked\+List$<$ T, num\+Threads, scan\+Threshold $>$\+::\+Clean\+Up\+Node\+Functor}}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_n_u_c_a_r_lock_free_d_s}{N\+U\+C\+A\+R\+Lock\+Free\+DS}}
+\item 
+ \mbox{\hyperlink{namespace_n_u_c_a_r_lock_free_d_s_1_1_lock_free_doubly_linked_list_config}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Lock\+Free\+Doubly\+Linked\+List\+Config}}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespace_n_u_c_a_r_lock_free_d_s_1_1_lock_free_doubly_linked_list_config_ad084f1e0e5259e450dbbbd2f7cfdb979}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Lock\+Free\+Doubly\+Linked\+List\+Config\+::\+Doubly\+Linked\+List\+Index\+\_\+t}} = long long int
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Index\+\_\+t $>$ }\\constexpr Index\+\_\+t \mbox{\hyperlink{namespace_n_u_c_a_r_lock_free_d_s_1_1_lock_free_doubly_linked_list_config_a43ef8849ef8b7bf92df8a6b5b8e22066}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Lock\+Free\+Doubly\+Linked\+List\+Config\+::\+Get\+Default\+Scan\+Threshold}} (const Index\+\_\+t num\+Threads)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr Doubly\+Linked\+List\+Index\+\_\+t \mbox{\hyperlink{namespace_n_u_c_a_r_lock_free_d_s_1_1_lock_free_doubly_linked_list_config_a0dfa8a093d372cc44eb9a2eba65c5ab6}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Lock\+Free\+Doubly\+Linked\+List\+Config\+::max\+Allocations\+Per\+Thread}} = 10
+\end{DoxyCompactItemize}

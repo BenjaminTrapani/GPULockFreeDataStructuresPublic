@@ -1,0 +1,78 @@
+\hypertarget{class_lock_free_queue_g_p_u_1_1_lock_free_queue}{}\section{Lock\+Free\+Queue\+G\+PU\+:\+:Lock\+Free\+Queue$<$ T, sentinel $>$ Class Template Reference}
+\label{class_lock_free_queue_g_p_u_1_1_lock_free_queue}\index{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue$<$ T, sentinel $>$@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue$<$ T, sentinel $>$}}
+
+
+{\ttfamily \#include $<$Lock\+Free\+Queue.\+hpp$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node}{Queue\+Node}}
+\item 
+class \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer}{Queue\+Node\+Pointer}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_ae85d149d9b7b114eb5a00e2ec93cd4c4}{Lock\+Free\+Queue}} ()
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_a90dfa85e6684e6f8b446a7a6d61aa1f9}{enqueue}} (const T \&value)
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ bool \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_a7d1f7625cfed705520e6a3a6171c6689}{dequeue}} (T \&result)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer}{Queue\+Node\+Pointer}} \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_ad41f0126dfecb8bc1c0ef2f17aff1ca1}{\+\_\+head}}
+\item 
+\mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer}{Queue\+Node\+Pointer}} \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_a0b018993ccd81f47c7c86e1fce76aab1}{\+\_\+tail}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_lock_free_queue_g_p_u_1_1_lock_free_queue_ae85d149d9b7b114eb5a00e2ec93cd4c4}\label{class_lock_free_queue_g_p_u_1_1_lock_free_queue_ae85d149d9b7b114eb5a00e2ec93cd4c4}} 
+\index{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}!Lock\+Free\+Queue@{Lock\+Free\+Queue}}
+\index{Lock\+Free\+Queue@{Lock\+Free\+Queue}!Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}}
+\subsubsection{\texorpdfstring{Lock\+Free\+Queue()}{LockFreeQueue()}}
+{\footnotesize\ttfamily template$<$typename T , T sentinel$>$ \\
+\+\_\+\+\_\+device\+\_\+\+\_\+ \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue}{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}}$<$ T, sentinel $>$\+::\mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue}{Lock\+Free\+Queue}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lock_free_queue_g_p_u_1_1_lock_free_queue_a7d1f7625cfed705520e6a3a6171c6689}\label{class_lock_free_queue_g_p_u_1_1_lock_free_queue_a7d1f7625cfed705520e6a3a6171c6689}} 
+\index{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}!dequeue@{dequeue}}
+\index{dequeue@{dequeue}!Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}}
+\subsubsection{\texorpdfstring{dequeue()}{dequeue()}}
+{\footnotesize\ttfamily template$<$typename T , T sentinel$>$ \\
+\+\_\+\+\_\+device\+\_\+\+\_\+ bool \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue}{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}}$<$ T, sentinel $>$\+::dequeue (\begin{DoxyParamCaption}\item[{T \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_lock_free_queue_g_p_u_1_1_lock_free_queue_a90dfa85e6684e6f8b446a7a6d61aa1f9}\label{class_lock_free_queue_g_p_u_1_1_lock_free_queue_a90dfa85e6684e6f8b446a7a6d61aa1f9}} 
+\index{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}}
+\subsubsection{\texorpdfstring{enqueue()}{enqueue()}}
+{\footnotesize\ttfamily template$<$typename T , T sentinel$>$ \\
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue}{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}}$<$ T, sentinel $>$\+::enqueue (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_lock_free_queue_g_p_u_1_1_lock_free_queue_ad41f0126dfecb8bc1c0ef2f17aff1ca1}\label{class_lock_free_queue_g_p_u_1_1_lock_free_queue_ad41f0126dfecb8bc1c0ef2f17aff1ca1}} 
+\index{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}!\+\_\+head@{\+\_\+head}}
+\index{\+\_\+head@{\+\_\+head}!Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}}
+\subsubsection{\texorpdfstring{\+\_\+head}{\_head}}
+{\footnotesize\ttfamily template$<$typename T , T sentinel$>$ \\
+\mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer}{Queue\+Node\+Pointer}} \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue}{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}}$<$ T, sentinel $>$\+::\+\_\+head\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_lock_free_queue_g_p_u_1_1_lock_free_queue_a0b018993ccd81f47c7c86e1fce76aab1}\label{class_lock_free_queue_g_p_u_1_1_lock_free_queue_a0b018993ccd81f47c7c86e1fce76aab1}} 
+\index{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}!\+\_\+tail@{\+\_\+tail}}
+\index{\+\_\+tail@{\+\_\+tail}!Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue@{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}}
+\subsubsection{\texorpdfstring{\+\_\+tail}{\_tail}}
+{\footnotesize\ttfamily template$<$typename T , T sentinel$>$ \\
+\mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue_1_1_queue_node_pointer}{Queue\+Node\+Pointer}} \mbox{\hyperlink{class_lock_free_queue_g_p_u_1_1_lock_free_queue}{Lock\+Free\+Queue\+G\+P\+U\+::\+Lock\+Free\+Queue}}$<$ T, sentinel $>$\+::\+\_\+tail\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+P\+U\+Lock\+Free\+Data\+Structures/\mbox{\hyperlink{_lock_free_queue_8hpp}{Lock\+Free\+Queue.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\hypertarget{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list}{}\section{N\+U\+C\+A\+R\+Lock\+Free\+DS\+:\+:Allocator$<$ T, I\+Link\+\_\+t, I\+Index\+\_\+t, Terminate\+Node\+\_\+t, Clean\+Up\+Node\+\_\+t, Get\+This\+Thread\+I\+D\+\_\+t, index\+Sentinel, num\+Threads, indices\+Per\+Thread, max\+Links, max\+Links\+To\+Deleted\+Node, scan\+Threshold, node\+Alignment $>$\+:\+:P\+List Class Reference}
+\label{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list}\index{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator$<$ T, I\+Link\+\_\+t, I\+Index\+\_\+t, Terminate\+Node\+\_\+t, Clean\+Up\+Node\+\_\+t, Get\+This\+Thread\+I\+D\+\_\+t, index\+Sentinel, num\+Threads, indices\+Per\+Thread, max\+Links, max\+Links\+To\+Deleted\+Node, scan\+Threshold, node\+Alignment $>$\+::\+P\+List@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator$<$ T, I\+Link\+\_\+t, I\+Index\+\_\+t, Terminate\+Node\+\_\+t, Clean\+Up\+Node\+\_\+t, Get\+This\+Thread\+I\+D\+\_\+t, index\+Sentinel, num\+Threads, indices\+Per\+Thread, max\+Links, max\+Links\+To\+Deleted\+Node, scan\+Threshold, node\+Alignment $>$\+::\+P\+List}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list_a62645ee0694885ea2d460db3c34c84ae}{add\+Node}} (const \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node}{Node}} $\ast$data)
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ bool \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list_a7131962e802f28f5bf5220211c7f5eb8}{contains}} (const \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node}{Node}} $\ast$elem)
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list_a05e00c2ca0f24298e7db21563368a416}{clear}} ()
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list_afd02db15ba9865760bb8c0649c1897a7}{P\+List}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node}{Node}} const  $\ast$ \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list_ac90fa5d4c7048415d16c8b46e5b3290a}{storage}} \mbox{[}num\+Threads $\ast$indices\+Per\+Thread\mbox{]}
+\item 
+\mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_a2776cca35e8343bf5007bd8b6f3a3f8f}{Index\+\_\+t}} \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list_a36446eb7ee5bc5173b9877e3baa9a3a4}{position}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list_afd02db15ba9865760bb8c0649c1897a7}\label{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list_afd02db15ba9865760bb8c0649c1897a7}} 
+\index{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List}!P\+List@{P\+List}}
+\index{P\+List@{P\+List}!N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List}}
+\subsubsection{\texorpdfstring{P\+List()}{PList()}}
+{\footnotesize\ttfamily template$<$typename T, typename I\+Link\+\_\+t, typename I\+Index\+\_\+t, typename Terminate\+Node\+\_\+t, typename Clean\+Up\+Node\+\_\+t, typename Get\+This\+Thread\+I\+D\+\_\+t, I\+Index\+\_\+t index\+Sentinel, I\+Index\+\_\+t num\+Threads, I\+Index\+\_\+t indices\+Per\+Thread, I\+Index\+\_\+t max\+Links, I\+Index\+\_\+t max\+Links\+To\+Deleted\+Node, I\+Index\+\_\+t scan\+Threshold, unsigned long long int node\+Alignment = 8$>$ \\
+\+\_\+\+\_\+device\+\_\+\+\_\+ \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator}}$<$ T, I\+Link\+\_\+t, I\+Index\+\_\+t, Terminate\+Node\+\_\+t, Clean\+Up\+Node\+\_\+t, Get\+This\+Thread\+I\+D\+\_\+t, index\+Sentinel, num\+Threads, indices\+Per\+Thread, max\+Links, max\+Links\+To\+Deleted\+Node, scan\+Threshold, node\+Alignment $>$\+::P\+List\+::\+P\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list_a62645ee0694885ea2d460db3c34c84ae}\label{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list_a62645ee0694885ea2d460db3c34c84ae}} 
+\index{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List}!add\+Node@{add\+Node}}
+\index{add\+Node@{add\+Node}!N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List}}
+\subsubsection{\texorpdfstring{add\+Node()}{addNode()}}
+{\footnotesize\ttfamily template$<$typename T, typename I\+Link\+\_\+t, typename I\+Index\+\_\+t, typename Terminate\+Node\+\_\+t, typename Clean\+Up\+Node\+\_\+t, typename Get\+This\+Thread\+I\+D\+\_\+t, I\+Index\+\_\+t index\+Sentinel, I\+Index\+\_\+t num\+Threads, I\+Index\+\_\+t indices\+Per\+Thread, I\+Index\+\_\+t max\+Links, I\+Index\+\_\+t max\+Links\+To\+Deleted\+Node, I\+Index\+\_\+t scan\+Threshold, unsigned long long int node\+Alignment = 8$>$ \\
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator}}$<$ T, I\+Link\+\_\+t, I\+Index\+\_\+t, Terminate\+Node\+\_\+t, Clean\+Up\+Node\+\_\+t, Get\+This\+Thread\+I\+D\+\_\+t, index\+Sentinel, num\+Threads, indices\+Per\+Thread, max\+Links, max\+Links\+To\+Deleted\+Node, scan\+Threshold, node\+Alignment $>$\+::P\+List\+::add\+Node (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node}{Node}} $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list_a05e00c2ca0f24298e7db21563368a416}\label{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list_a05e00c2ca0f24298e7db21563368a416}} 
+\index{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List}!clear@{clear}}
+\index{clear@{clear}!N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$typename T, typename I\+Link\+\_\+t, typename I\+Index\+\_\+t, typename Terminate\+Node\+\_\+t, typename Clean\+Up\+Node\+\_\+t, typename Get\+This\+Thread\+I\+D\+\_\+t, I\+Index\+\_\+t index\+Sentinel, I\+Index\+\_\+t num\+Threads, I\+Index\+\_\+t indices\+Per\+Thread, I\+Index\+\_\+t max\+Links, I\+Index\+\_\+t max\+Links\+To\+Deleted\+Node, I\+Index\+\_\+t scan\+Threshold, unsigned long long int node\+Alignment = 8$>$ \\
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator}}$<$ T, I\+Link\+\_\+t, I\+Index\+\_\+t, Terminate\+Node\+\_\+t, Clean\+Up\+Node\+\_\+t, Get\+This\+Thread\+I\+D\+\_\+t, index\+Sentinel, num\+Threads, indices\+Per\+Thread, max\+Links, max\+Links\+To\+Deleted\+Node, scan\+Threshold, node\+Alignment $>$\+::P\+List\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list_a7131962e802f28f5bf5220211c7f5eb8}\label{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list_a7131962e802f28f5bf5220211c7f5eb8}} 
+\index{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List}!contains@{contains}}
+\index{contains@{contains}!N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List}}
+\subsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily template$<$typename T, typename I\+Link\+\_\+t, typename I\+Index\+\_\+t, typename Terminate\+Node\+\_\+t, typename Clean\+Up\+Node\+\_\+t, typename Get\+This\+Thread\+I\+D\+\_\+t, I\+Index\+\_\+t index\+Sentinel, I\+Index\+\_\+t num\+Threads, I\+Index\+\_\+t indices\+Per\+Thread, I\+Index\+\_\+t max\+Links, I\+Index\+\_\+t max\+Links\+To\+Deleted\+Node, I\+Index\+\_\+t scan\+Threshold, unsigned long long int node\+Alignment = 8$>$ \\
+\+\_\+\+\_\+device\+\_\+\+\_\+ bool \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator}}$<$ T, I\+Link\+\_\+t, I\+Index\+\_\+t, Terminate\+Node\+\_\+t, Clean\+Up\+Node\+\_\+t, Get\+This\+Thread\+I\+D\+\_\+t, index\+Sentinel, num\+Threads, indices\+Per\+Thread, max\+Links, max\+Links\+To\+Deleted\+Node, scan\+Threshold, node\+Alignment $>$\+::P\+List\+::contains (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node}{Node}} $\ast$}]{elem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list_a36446eb7ee5bc5173b9877e3baa9a3a4}\label{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list_a36446eb7ee5bc5173b9877e3baa9a3a4}} 
+\index{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List}!position@{position}}
+\index{position@{position}!N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily template$<$typename T, typename I\+Link\+\_\+t, typename I\+Index\+\_\+t, typename Terminate\+Node\+\_\+t, typename Clean\+Up\+Node\+\_\+t, typename Get\+This\+Thread\+I\+D\+\_\+t, I\+Index\+\_\+t index\+Sentinel, I\+Index\+\_\+t num\+Threads, I\+Index\+\_\+t indices\+Per\+Thread, I\+Index\+\_\+t max\+Links, I\+Index\+\_\+t max\+Links\+To\+Deleted\+Node, I\+Index\+\_\+t scan\+Threshold, unsigned long long int node\+Alignment = 8$>$ \\
+\mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_a2776cca35e8343bf5007bd8b6f3a3f8f}{Index\+\_\+t}} \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator}}$<$ T, I\+Link\+\_\+t, I\+Index\+\_\+t, Terminate\+Node\+\_\+t, Clean\+Up\+Node\+\_\+t, Get\+This\+Thread\+I\+D\+\_\+t, index\+Sentinel, num\+Threads, indices\+Per\+Thread, max\+Links, max\+Links\+To\+Deleted\+Node, scan\+Threshold, node\+Alignment $>$\+::P\+List\+::position\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list_ac90fa5d4c7048415d16c8b46e5b3290a}\label{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_p_list_ac90fa5d4c7048415d16c8b46e5b3290a}} 
+\index{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List}!storage@{storage}}
+\index{storage@{storage}!N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List@{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator\+::\+P\+List}}
+\subsubsection{\texorpdfstring{storage}{storage}}
+{\footnotesize\ttfamily template$<$typename T, typename I\+Link\+\_\+t, typename I\+Index\+\_\+t, typename Terminate\+Node\+\_\+t, typename Clean\+Up\+Node\+\_\+t, typename Get\+This\+Thread\+I\+D\+\_\+t, I\+Index\+\_\+t index\+Sentinel, I\+Index\+\_\+t num\+Threads, I\+Index\+\_\+t indices\+Per\+Thread, I\+Index\+\_\+t max\+Links, I\+Index\+\_\+t max\+Links\+To\+Deleted\+Node, I\+Index\+\_\+t scan\+Threshold, unsigned long long int node\+Alignment = 8$>$ \\
+\mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator_1_1_node}{Node}} const$\ast$ \mbox{\hyperlink{class_n_u_c_a_r_lock_free_d_s_1_1_allocator}{N\+U\+C\+A\+R\+Lock\+Free\+D\+S\+::\+Allocator}}$<$ T, I\+Link\+\_\+t, I\+Index\+\_\+t, Terminate\+Node\+\_\+t, Clean\+Up\+Node\+\_\+t, Get\+This\+Thread\+I\+D\+\_\+t, index\+Sentinel, num\+Threads, indices\+Per\+Thread, max\+Links, max\+Links\+To\+Deleted\+Node, scan\+Threshold, node\+Alignment $>$\+::P\+List\+::storage\mbox{[}num\+Threads $\ast$indices\+Per\+Thread\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+G\+P\+U\+Lock\+Free\+Data\+Structures/\mbox{\hyperlink{_allocator_8hpp}{Allocator.\+hpp}}\end{DoxyCompactItemize}
