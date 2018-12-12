@@ -2,6 +2,6 @@ OUTPUT_DIRECTORY = ./docs/
 EXTRACT_ALL = yes
 EXTRACT_PRIVATE = yes
 EXTRACT_STATIC = yes
-INPUT = ./gpu/queue
+INPUT = GPULockFreeDataStructures/
 FILE_PATTERNS = 
 RECURSIVE = yes
